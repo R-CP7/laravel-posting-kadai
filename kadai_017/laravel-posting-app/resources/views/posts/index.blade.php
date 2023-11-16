@@ -11,7 +11,7 @@
          <a href="{{ route('posts.create') }}" class="text-decoration-none">新規投稿</a>                                   
      </div>
  
-     @foreach($posts as $post)
+     @foreach($posts->reverse() as $post)
          <div class="card mb-3">
              <div class="card-body">
                  <h2 class="card-title fs-5">{{ $post->title }}</h2>
